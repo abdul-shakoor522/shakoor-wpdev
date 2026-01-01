@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tags -->
+    <meta name="description"
+        content="Abdul Shakoor, WordPress expert from Pakistan, specializing in website design, development, SEO, speed optimization, malware removal & security.">
+    <meta name="keywords"
+        content="WordPress developer, SEO optimization, website design, malware removal, website security, speed optimization, Abdul Shakoor">
+    <meta name="author" content="Abdul Shakoor">
+    <link rel="canonical" href="https://portfolio-test-opt.vercel.app/" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <title>Developer-Shakoor</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/smooth-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="home1-page">
+    <video class="body-overlay" muted autoplay loop>
+        <source src="assets/images/video1.mp4" type="video/mp4">
+    </video>
+
+    <!-- <div class="page-loader">
+        <div class="bounceball"></div>
+    </div> -->
+
+    <span class="icon-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div class="responsive-sidebar-menu">
+        <div class="overlay"></div>
+        <div class="sidebar-menu-inner">
+            <div class="menu-wrap">
+                <p>Menu</p>
+                <ul class="menu scroll-nav-responsive d-flex">
+                    <li>
+                        <a class="scroll-to" href="#home" aria-label="View Home">
+                            <i class="las la-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#about" aria-label="View About">
+                            <i class="lar la-user"></i> <span>About</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="scroll-to" href="#services" aria-label="View Services">
+                            <i class="las la-stream"></i> <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#skills" aria-label="View Skills">
+                            <i class="las la-shapes"></i> <span>Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#portfolio" aria-label="View Portfolios">
+                            <i class="las la-grip-vertical"></i> <span>Portfolios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#contact" aria-label="View Contact">
+                            <i class="las la-envelope"></i> <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-social">
+                <p>Social</p>
+                <ul class="social-links d-flex align-items-center">
+                    <li>
+                        <a href="https://wa.me/+923120733806?text=Hello%20there!" aria-label="Message me on whatsapp"
+                            target="_blank"><svg style="height: 23px;" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z">
+                                </path>
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abdul-shakoor522" target="_blank"><svg
+                                style="height: 20px;width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M5.88401 18.6533C5.58404 18.4526 5.32587 18.1975 5.0239 17.8369C4.91473 17.7065 4.47283 17.1524 4.55811 17.2583C4.09533 16.6833 3.80296 16.417 3.50156 16.3089C2.9817 16.1225 2.7114 15.5499 2.89784 15.0301C3.08428 14.5102 3.65685 14.2399 4.17672 14.4263C4.92936 14.6963 5.43847 15.1611 6.12425 16.0143C6.03025 15.8974 6.46364 16.441 6.55731 16.5529C6.74784 16.7804 6.88732 16.9182 6.99629 16.9911C7.20118 17.1283 7.58451 17.1874 8.14709 17.1311C8.17065 16.7489 8.24136 16.3783 8.34919 16.0358C5.38097 15.3104 3.70116 13.3952 3.70116 9.63971C3.70116 8.40085 4.0704 7.28393 4.75917 6.3478C4.5415 5.45392 4.57433 4.37284 5.06092 3.15636C5.1725 2.87739 5.40361 2.66338 5.69031 2.57352C5.77242 2.54973 5.81791 2.53915 5.89878 2.52673C6.70167 2.40343 7.83573 2.69705 9.31449 3.62336C10.181 3.41879 11.0885 3.315 12.0012 3.315C12.9129 3.315 13.8196 3.4186 14.6854 3.62277C16.1619 2.69 17.2986 2.39649 18.1072 2.52651C18.1919 2.54013 18.2645 2.55783 18.3249 2.57766C18.6059 2.66991 18.8316 2.88179 18.9414 3.15636C19.4279 4.37256 19.4608 5.45344 19.2433 6.3472C19.9342 7.28337 20.3012 8.39208 20.3012 9.63971C20.3012 13.3968 18.627 15.3048 15.6588 16.032C15.7837 16.447 15.8496 16.9105 15.8496 17.4121C15.8496 18.0765 15.8471 18.711 15.8424 19.4225C15.8412 19.6127 15.8397 19.8159 15.8375 20.1281C16.2129 20.2109 16.5229 20.5077 16.6031 20.9089C16.7114 21.4504 16.3602 21.9773 15.8186 22.0856C14.6794 22.3134 13.8353 21.5538 13.8353 20.5611C13.8353 20.4708 13.836 20.3417 13.8375 20.1145C13.8398 19.8015 13.8412 19.599 13.8425 19.4094C13.8471 18.7019 13.8496 18.0716 13.8496 17.4121C13.8496 16.7148 13.6664 16.2602 13.4237 16.051C12.7627 15.4812 13.0977 14.3973 13.965 14.2999C16.9314 13.9666 18.3012 12.8177 18.3012 9.63971C18.3012 8.68508 17.9893 7.89571 17.3881 7.23559C17.1301 6.95233 17.0567 6.54659 17.199 6.19087C17.3647 5.77663 17.4354 5.23384 17.2941 4.57702L17.2847 4.57968C16.7928 4.71886 16.1744 5.0198 15.4261 5.5285C15.182 5.69438 14.8772 5.74401 14.5932 5.66413C13.7729 5.43343 12.8913 5.315 12.0012 5.315C11.111 5.315 10.2294 5.43343 9.40916 5.66413C9.12662 5.74359 8.82344 5.69492 8.57997 5.53101C7.8274 5.02439 7.2056 4.72379 6.71079 4.58376C6.56735 5.23696 6.63814 5.77782 6.80336 6.19087C6.94565 6.54659 6.87219 6.95233 6.61423 7.23559C6.01715 7.8912 5.70116 8.69376 5.70116 9.63971C5.70116 12.8116 7.07225 13.9683 10.023 14.2999C10.8883 14.3971 11.2246 15.4769 10.5675 16.0482C10.3751 16.2156 10.1384 16.7802 10.1384 17.4121V20.5611C10.1384 21.5474 9.30356 22.2869 8.17878 22.09C7.63476 21.9948 7.27093 21.4766 7.36613 20.9326C7.43827 20.5204 7.75331 20.2116 8.13841 20.1276V19.1381C7.22829 19.1994 6.47656 19.0498 5.88401 18.6533Z">
+                                </path>
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abdul-shakoor522" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z">
+                                </path>
+                            </svg></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@shakoorwp.official" target="_blank"><svg
+                                style="height: 20px;width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M11.0004 2V8.41396C10.5947 8.33909 10.1768 8.3 9.75039 8.3C5.96724 8.3 2.90039 11.3668 2.90039 15.15C2.90039 18.9332 5.96724 22 9.75039 22C13.5335 22 16.6004 18.9332 16.6004 15.15V11.4136C17.6366 11.8539 18.7662 12.1 20.0005 12.1H21.0005V6.5H20.0005C18.0966 6.5 16.6004 4.96259 16.6004 3V2H11.0004ZM13.0004 4H14.688C15.0818 6.22009 16.7673 7.99607 19.0005 8.4091V10.0282C17.9624 9.87602 17.0253 9.48645 16.1567 8.905L14.6004 7.86327V15.15C14.6004 17.8286 12.429 20 9.75039 20C7.07181 20 4.90039 17.8286 4.90039 15.15C4.90039 12.4714 7.07181 10.3 9.75039 10.3C9.83431 10.3 9.91769 10.3021 10.0005 10.3063V11.9095C9.91795 11.9032 9.83454 11.9 9.75039 11.9C7.95547 11.9 6.50039 13.3551 6.50039 15.15C6.50039 16.9449 7.95547 18.4 9.75039 18.4C11.5453 18.4 13.0004 16.9449 13.0004 15.15C13.0004 11.4334 12.9992 7.71665 13.0004 4ZM8.50039 15.15C8.50039 14.4596 9.06003 13.9 9.75039 13.9C10.4407 13.9 11.0004 14.4596 11.0004 15.15C11.0004 15.8404 10.4407 16.4 9.75039 16.4C9.06003 16.4 8.50039 15.8404 8.50039 15.15Z">
+                                </path>
+                            </svg></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <ul class="menu scroll-nav d-flex">
+        <li>
+            <a class="scroll-to" href="#home" aria-label="View Home">
+                <span>Home</span> <i class="las la-home"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#about" aria-label="View About">
+                <span>About</span> <i class="lar la-user"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#services" aria-label="View Services">
+                <span>Services</span> <i class="las la-stream"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#skills" aria-label="View Skills">
+                <span>Skills</span> <i class="las la-shapes"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#portfolio" aria-label="View Portfolios">
+                <span>Portfolios</span> <i class="las la-grip-vertical"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#contact" aria-label="View Contact">
+                <span>Contact</span> <i class="las la-envelope"></i>
+            </a>
+        </li>
+    </ul>
+
+    <div class="left-sidebar">
+        <div class="sidebar-header d-flex align-items-center justify-content-between">
+            <h1>Shakoor</h1>
+            <span class="designation">Designer & Developer</span>
+        </div>
+        <img class="me" src="Abdul-Shakoor-wordpress-elementor-landing-page-design-dev.webp"
+            style="width: 200px;height:200px ;margin-left:40px ;" fetchpriority="high" loading="eager"
+            alt="Abdul Shakoor wordpress developer" height="200px" width="200px">
+
+        <h2 class="address">Base in <span style="color:#28e98c;">Pakistan</span></h2>
+        <!-- <p class="copyright">&copy; 2022 Shakoor. All Rights Reserved</p> -->
+        <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+            <li>
+                <a href="https://wa.me/+923120733806?text=Hello%20there!" aria-label="Message me on whatsapp"
+                    target="_blank"><svg style="height: 23px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z">
+                        </path>
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://web.facebook.com/profile.php?id=100076821242207" aria-label="Checkout my facebook"
+                    target="_blank"><svg style="height: 23px; font-weight: 600;" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z">
+                        </path>
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://github.com/abdul-shakoor522" aria-label="Checkout my Github" target="_blank"><svg
+                        style="height: 20px; width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M5.88401 18.6533C5.58404 18.4526 5.32587 18.1975 5.0239 17.8369C4.91473 17.7065 4.47283 17.1524 4.55811 17.2583C4.09533 16.6833 3.80296 16.417 3.50156 16.3089C2.9817 16.1225 2.7114 15.5499 2.89784 15.0301C3.08428 14.5102 3.65685 14.2399 4.17672 14.4263C4.92936 14.6963 5.43847 15.1611 6.12425 16.0143C6.03025 15.8974 6.46364 16.441 6.55731 16.5529C6.74784 16.7804 6.88732 16.9182 6.99629 16.9911C7.20118 17.1283 7.58451 17.1874 8.14709 17.1311C8.17065 16.7489 8.24136 16.3783 8.34919 16.0358C5.38097 15.3104 3.70116 13.3952 3.70116 9.63971C3.70116 8.40085 4.0704 7.28393 4.75917 6.3478C4.5415 5.45392 4.57433 4.37284 5.06092 3.15636C5.1725 2.87739 5.40361 2.66338 5.69031 2.57352C5.77242 2.54973 5.81791 2.53915 5.89878 2.52673C6.70167 2.40343 7.83573 2.69705 9.31449 3.62336C10.181 3.41879 11.0885 3.315 12.0012 3.315C12.9129 3.315 13.8196 3.4186 14.6854 3.62277C16.1619 2.69 17.2986 2.39649 18.1072 2.52651C18.1919 2.54013 18.2645 2.55783 18.3249 2.57766C18.6059 2.66991 18.8316 2.88179 18.9414 3.15636C19.4279 4.37256 19.4608 5.45344 19.2433 6.3472C19.9342 7.28337 20.3012 8.39208 20.3012 9.63971C20.3012 13.3968 18.627 15.3048 15.6588 16.032C15.7837 16.447 15.8496 16.9105 15.8496 17.4121C15.8496 18.0765 15.8471 18.711 15.8424 19.4225C15.8412 19.6127 15.8397 19.8159 15.8375 20.1281C16.2129 20.2109 16.5229 20.5077 16.6031 20.9089C16.7114 21.4504 16.3602 21.9773 15.8186 22.0856C14.6794 22.3134 13.8353 21.5538 13.8353 20.5611C13.8353 20.4708 13.836 20.3417 13.8375 20.1145C13.8398 19.8015 13.8412 19.599 13.8425 19.4094C13.8471 18.7019 13.8496 18.0716 13.8496 17.4121C13.8496 16.7148 13.6664 16.2602 13.4237 16.051C12.7627 15.4812 13.0977 14.3973 13.965 14.2999C16.9314 13.9666 18.3012 12.8177 18.3012 9.63971C18.3012 8.68508 17.9893 7.89571 17.3881 7.23559C17.1301 6.95233 17.0567 6.54659 17.199 6.19087C17.3647 5.77663 17.4354 5.23384 17.2941 4.57702L17.2847 4.57968C16.7928 4.71886 16.1744 5.0198 15.4261 5.5285C15.182 5.69438 14.8772 5.74401 14.5932 5.66413C13.7729 5.43343 12.8913 5.315 12.0012 5.315C11.111 5.315 10.2294 5.43343 9.40916 5.66413C9.12662 5.74359 8.82344 5.69492 8.57997 5.53101C7.8274 5.02439 7.2056 4.72379 6.71079 4.58376C6.56735 5.23696 6.63814 5.77782 6.80336 6.19087C6.94565 6.54659 6.87219 6.95233 6.61423 7.23559C6.01715 7.8912 5.70116 8.69376 5.70116 9.63971C5.70116 12.8116 7.07225 13.9683 10.023 14.2999C10.8883 14.3971 11.2246 15.4769 10.5675 16.0482C10.3751 16.2156 10.1384 16.7802 10.1384 17.4121V20.5611C10.1384 21.5474 9.30356 22.2869 8.17878 22.09C7.63476 21.9948 7.27093 21.4766 7.36613 20.9326C7.43827 20.5204 7.75331 20.2116 8.13841 20.1276V19.1381C7.22829 19.1994 6.47656 19.0498 5.88401 18.6533Z">
+                        </path>
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@shakoorwp.official" aria-label="Checkout my tiktok"
+                    target="_blank"><svg style="height: 20px;width: 20px;" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.0004 2V8.41396C10.5947 8.33909 10.1768 8.3 9.75039 8.3C5.96724 8.3 2.90039 11.3668 2.90039 15.15C2.90039 18.9332 5.96724 22 9.75039 22C13.5335 22 16.6004 18.9332 16.6004 15.15V11.4136C17.6366 11.8539 18.7662 12.1 20.0005 12.1H21.0005V6.5H20.0005C18.0966 6.5 16.6004 4.96259 16.6004 3V2H11.0004ZM13.0004 4H14.688C15.0818 6.22009 16.7673 7.99607 19.0005 8.4091V10.0282C17.9624 9.87602 17.0253 9.48645 16.1567 8.905L14.6004 7.86327V15.15C14.6004 17.8286 12.429 20 9.75039 20C7.07181 20 4.90039 17.8286 4.90039 15.15C4.90039 12.4714 7.07181 10.3 9.75039 10.3C9.83431 10.3 9.91769 10.3021 10.0005 10.3063V11.9095C9.91795 11.9032 9.83454 11.9 9.75039 11.9C7.95547 11.9 6.50039 13.3551 6.50039 15.15C6.50039 16.9449 7.95547 18.4 9.75039 18.4C11.5453 18.4 13.0004 16.9449 13.0004 15.15C13.0004 11.4334 12.9992 7.71665 13.0004 4ZM8.50039 15.15C8.50039 14.4596 9.06003 13.9 9.75039 13.9C10.4407 13.9 11.0004 14.4596 11.0004 15.15C11.0004 15.8404 10.4407 16.4 9.75039 16.4C9.06003 16.4 8.50039 15.8404 8.50039 15.15Z">
+                        </path>
+                    </svg></i></a>
+            </li>
+        </ul>
+        <a href="#contact" class="theme-btn">
+            <i class="las la-envelope"></i> Hire Me!
+        </a>
+    </div>
+
+    <main class="drake-main">
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <div class="left-sidebar">
+                    <div class="sidebar-header d-flex align-items-center justify-content-between">
+                        <h1>Shakoor</h1>
+                        <span class="designation">Designer & Developer</span>
+                    </div>
+                    <img class="me" src="Abdul-Shakoor-wordpress-elementor-landing-page-design-dev.webp"
+                        alt="Shakoor developer wordpress" fetchpriority="high" loading="eager" height="200px"
+                        width="200px">
+
+                    <h2 class="address">Base in <span style="color:#28e98c;">Pakistan</span></h2>
+                    <!-- <p class="copyright">&copy; 2022 Shakoor. All Rights Reserved</p> -->
+                    <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                        <li>
+                            <a href="https://web.facebook.com/profile.php?id=100076821242207"
+                                aria-label="Checkout my facebook" target="_blank"><svg style="height: 20px;"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z">
+                                    </path>
+                                </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/+923120733806?text=Hello%20there!"
+                                aria-label="Message me on whatsapp" target="_blank"><svg style="height: 23px;"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z">
+                                    </path>
+                                </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/abdul-shakoor522" aria-label="Checkout my Github"
+                                target="_blank"><svg style="height: 20px; width: 20px;"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M5.88401 18.6533C5.58404 18.4526 5.32587 18.1975 5.0239 17.8369C4.91473 17.7065 4.47283 17.1524 4.55811 17.2583C4.09533 16.6833 3.80296 16.417 3.50156 16.3089C2.9817 16.1225 2.7114 15.5499 2.89784 15.0301C3.08428 14.5102 3.65685 14.2399 4.17672 14.4263C4.92936 14.6963 5.43847 15.1611 6.12425 16.0143C6.03025 15.8974 6.46364 16.441 6.55731 16.5529C6.74784 16.7804 6.88732 16.9182 6.99629 16.9911C7.20118 17.1283 7.58451 17.1874 8.14709 17.1311C8.17065 16.7489 8.24136 16.3783 8.34919 16.0358C5.38097 15.3104 3.70116 13.3952 3.70116 9.63971C3.70116 8.40085 4.0704 7.28393 4.75917 6.3478C4.5415 5.45392 4.57433 4.37284 5.06092 3.15636C5.1725 2.87739 5.40361 2.66338 5.69031 2.57352C5.77242 2.54973 5.81791 2.53915 5.89878 2.52673C6.70167 2.40343 7.83573 2.69705 9.31449 3.62336C10.181 3.41879 11.0885 3.315 12.0012 3.315C12.9129 3.315 13.8196 3.4186 14.6854 3.62277C16.1619 2.69 17.2986 2.39649 18.1072 2.52651C18.1919 2.54013 18.2645 2.55783 18.3249 2.57766C18.6059 2.66991 18.8316 2.88179 18.9414 3.15636C19.4279 4.37256 19.4608 5.45344 19.2433 6.3472C19.9342 7.28337 20.3012 8.39208 20.3012 9.63971C20.3012 13.3968 18.627 15.3048 15.6588 16.032C15.7837 16.447 15.8496 16.9105 15.8496 17.4121C15.8496 18.0765 15.8471 18.711 15.8424 19.4225C15.8412 19.6127 15.8397 19.8159 15.8375 20.1281C16.2129 20.2109 16.5229 20.5077 16.6031 20.9089C16.7114 21.4504 16.3602 21.9773 15.8186 22.0856C14.6794 22.3134 13.8353 21.5538 13.8353 20.5611C13.8353 20.4708 13.836 20.3417 13.8375 20.1145C13.8398 19.8015 13.8412 19.599 13.8425 19.4094C13.8471 18.7019 13.8496 18.0716 13.8496 17.4121C13.8496 16.7148 13.6664 16.2602 13.4237 16.051C12.7627 15.4812 13.0977 14.3973 13.965 14.2999C16.9314 13.9666 18.3012 12.8177 18.3012 9.63971C18.3012 8.68508 17.9893 7.89571 17.3881 7.23559C17.1301 6.95233 17.0567 6.54659 17.199 6.19087C17.3647 5.77663 17.4354 5.23384 17.2941 4.57702L17.2847 4.57968C16.7928 4.71886 16.1744 5.0198 15.4261 5.5285C15.182 5.69438 14.8772 5.74401 14.5932 5.66413C13.7729 5.43343 12.8913 5.315 12.0012 5.315C11.111 5.315 10.2294 5.43343 9.40916 5.66413C9.12662 5.74359 8.82344 5.69492 8.57997 5.53101C7.8274 5.02439 7.2056 4.72379 6.71079 4.58376C6.56735 5.23696 6.63814 5.77782 6.80336 6.19087C6.94565 6.54659 6.87219 6.95233 6.61423 7.23559C6.01715 7.8912 5.70116 8.69376 5.70116 9.63971C5.70116 12.8116 7.07225 13.9683 10.023 14.2999C10.8883 14.3971 11.2246 15.4769 10.5675 16.0482C10.3751 16.2156 10.1384 16.7802 10.1384 17.4121V20.5611C10.1384 21.5474 9.30356 22.2869 8.17878 22.09C7.63476 21.9948 7.27093 21.4766 7.36613 20.9326C7.43827 20.5204 7.75331 20.2116 8.13841 20.1276V19.1381C7.22829 19.1994 6.47656 19.0498 5.88401 18.6533Z">
+                                    </path>
+                                </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@shakoorwp.official" aria-label="Checkout my tiktok"
+                                target="_blank"><svg style="height: 20px;width: 20px;"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M11.0004 2V8.41396C10.5947 8.33909 10.1768 8.3 9.75039 8.3C5.96724 8.3 2.90039 11.3668 2.90039 15.15C2.90039 18.9332 5.96724 22 9.75039 22C13.5335 22 16.6004 18.9332 16.6004 15.15V11.4136C17.6366 11.8539 18.7662 12.1 20.0005 12.1H21.0005V6.5H20.0005C18.0966 6.5 16.6004 4.96259 16.6004 3V2H11.0004ZM13.0004 4H14.688C15.0818 6.22009 16.7673 7.99607 19.0005 8.4091V10.0282C17.9624 9.87602 17.0253 9.48645 16.1567 8.905L14.6004 7.86327V15.15C14.6004 17.8286 12.429 20 9.75039 20C7.07181 20 4.90039 17.8286 4.90039 15.15C4.90039 12.4714 7.07181 10.3 9.75039 10.3C9.83431 10.3 9.91769 10.3021 10.0005 10.3063V11.9095C9.91795 11.9032 9.83454 11.9 9.75039 11.9C7.95547 11.9 6.50039 13.3551 6.50039 15.15C6.50039 16.9449 7.95547 18.4 9.75039 18.4C11.5453 18.4 13.0004 16.9449 13.0004 15.15C13.0004 11.4334 12.9992 7.71665 13.0004 4ZM8.50039 15.15C8.50039 14.4596 9.06003 13.9 9.75039 13.9C10.4407 13.9 11.0004 14.4596 11.0004 15.15C11.0004 15.8404 10.4407 16.4 9.75039 16.4C9.06003 16.4 8.50039 15.8404 8.50039 15.15Z">
+                                    </path>
+                                </svg></i></a>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="theme-btn">
+                        <i class="las la-envelope"></i> Hire Me!
+                    </a>
+                </div>
+
+                <section class="hero-section page-section scroll-to-page" id="home">
+
+                    <div class="custom-container">
+                        <div class="hero-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-home"></i> Introduce
+                                </h4>
+
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">
+                                    I'm <span>Shakoor,</span> <span id="typing"></span>
+                                </h1>
+                            </div>
+
+                            <p class="scroll-animation" data-animation="fade_from_bottom">I design and code beautifully
+                                simple things and i love what i do. Just simple like that!</p>
+
+
+                            <div class="facts d-flex">
+                                <div class="left scroll-animation" data-animation="fade_from_left">
+                                    <h1>2+</h1>
+                                    <p>Years of <br>Experience</p>
+                                </div>
+                                <div class="right scroll-animation" data-animation="fade_from_right">
+                                    <h1>10+</h1>
+                                    <p>projects completed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-area page-section scroll-to-page" id="about">
+                    <div class="custom-container">
+                        <div class="about-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-user"></i> About
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">About <span>me.</span>
+                                </h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">
+                                Hi, I'm Abdul Shakoor, a
+                                <span class="wave-underline">WordPress Expert</span>
+                                with 2+ years of experience
+                                crafting modern, responsive, and user-friendly websites. I’ve successfully completed
+                                multiple client projects, delivering custom WordPress solutions that align with each
+                                brand’s goals and style. From design to deployment, I focus on creating clean,
+                                optimized,
+                                and high-performing websites that leave a lasting impression. Let’s build something
+                                amazing together!
+                            </p>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="services-area page-section scroll-to-page" id="services">
+                    <div class="custom-container">
+                        <div class="services-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-stream"></i> Services
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">My
+                                    <span>Services</span>
+                                </h1>
+                            </div>
+
+                            <div class="services-items">
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-code"></i>
+                                    <h2>WordPress Website</h2>
+                                    <p>
+                                        I design and develop WordPress websites that are fast, secure, and easy to
+                                        manage.
+                                        Using powerful tools like Elementor and Contact Form 7, I create responsive,
+                                        SEO-friendly
+                                        sites that help businesses stand out and convert visitors into clients.
+                                    </p>
+
+                                    <span class="projects">7 Projects</span>
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-bezier-curve"></i>
+                                    <h2>Figma To WordPress</h2>
+                                    <p>
+                                        I convert Figma designs into responsive and user-friendly WordPress websites.
+                                        Your design is carefully translated into a working site that looks great on all
+                                        screens, loads fast, and is simple to update without technical knowledge.
+                                    </p>
+                                    <span class="projects">4 Projects</span>
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-bug"></i>
+                                    <h2>Bug Fixing & Customization</h2>
+                                    <p>
+                                        I troubleshoot and fix WordPress errors, layout issues, and plugin conflicts to
+                                        keep your
+                                        website running smoothly. I also customize themes and plugins to match your
+                                        brand’s vision,
+                                        enhancing both performance and user experience.
+                                    </p>
+                                    <span class="projects">5 Projects</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="skills-area page-section scroll-to-page" id="skills">
+                    <div class="custom-container">
+                        <div class="skills-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-shapes"></i> my skills
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">My
+                                    <span>Skills</span>
+                                </h1>
+                            </div>
+                            <div class="row skills text-center">
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/wordpress-developer-shakoor.webp" alt="wordpress">
+                                            <!-- <h1 class="percent">94%</h1> -->
+                                        </div>
+                                        <p class="name">WordPress</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/elementor-min.webp" alt="elementor">
+                                        </div>
+                                        <p class="name">Elementor</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/acf.svg" alt="acf">
+                                            <!-- <h1 class="percent">96%</h1> -->
+                                        </div>
+                                        <p class="name">ACF</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/bug-developer-shakoor-min.webp" alt="bug fixing">
+                                            <!-- <h1 class="percent">91%</h1> -->
+                                        </div>
+                                        <p class="name">Bug Fixing</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/contact-developer-shakoor.svg" alt="php">
+                                            <!-- <h1 class="percent">95%</h1> -->
+                                        </div>
+                                        <p class="name">Contact Form 7</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/php.svg" alt="php">
+                                            <!-- <h1 class="percent">95%</h1> -->
+                                        </div>
+                                        <p class="name">PHP</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/html.svg" alt="html">
+                                            <!-- <h1 class="percent">92%</h1> -->
+                                        </div>
+                                        <p class="name">HTML</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/css.svg" alt="css">
+                                            <!-- <h1 class="percent">89%</h1> -->
+                                        </div>
+                                        <p class="name">CSS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="portfolio-area page-section scroll-to-page" id="portfolio">
+                    <div class="custom-container">
+                        <div class="portfolio-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-grip-vertical"></i> portfolio
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Featured
+                                    <span>Projects</span>
+                                </h1>
+                            </div>
+
+                            <div class="row portfolio-items">
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-full">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/projects/business-main-developer-shakoor-full.webp"
+                                                data-lightbox="example-1">
+                                                <img src="assets/images/projects/business-main.webp"
+                                                    alt="Business Website">
+                                            </a>
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Elementor</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Bug Fixing</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wp Form</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://matrixbusinessinvest.com/en/" target="_blank"
+                                                aria-label="Business Website">Business
+                                                Website</a></h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/projects/dreamhouse-full.webp"
+                                                data-lightbox="example-1">
+                                                <img src="assets/images/projects/dream-main.webp"
+                                                    alt="Dream House Website">
+                                            </a>
+
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">ACF</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Jetengine</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://www.facebook.com/share/v/1DaUPt2bSE/" target="_blank"
+                                                aria-label="Real Estate Website">Real
+                                                Estate Website</a></h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/projects/photography-full.webp"
+                                                data-lightbox="example-1">
+                                                <img src="assets/images/projects/photography-main.webp"
+                                                    alt="Photography Website">
+                                            </a>
+
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Elementor</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Contact Form 7</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://www.facebook.com/share/v/17uV5MCvgB/"
+                                                aria-label="Photography Website" target="_blank">Photography Website</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/projects/builder-developer-shakoor-full.webp"
+                                                data-lightbox="example-1">
+                                                <img src="assets/images/projects/builder-main-developer-shakoor.webp"
+                                                    alt="Builder Website">
+                                            </a>
+                                            <!-- <img src="assets/images/project-2-developer-shakoor.png" alt="Builder Website"> -->
+
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Elementor</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Contact Form 7</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#portfolio" aria-label="Builder Website">Services website</a></h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/projects/saas-full-image.webp"
+                                                data-lightbox="example-1">
+                                                <img src="assets/images/projects/saas-main.webp"
+                                                    alt="Saas Landing Page">
+                                            </a>
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Elementor Pro</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ACF</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://www.facebook.com/share/v/1C3qUPkUFs/" target="_blank"
+                                                aria-label="Saas Landing Page">Saas
+                                                Landing Page</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/projects/restaurant-developer-shakoor-full.webp"
+                                                data-lightbox="example-1">
+                                                <img src="assets/images/projects/restaurant-main-developer-shakoor.webp"
+                                                    alt="Restaurant Website">
+                                            </a>
+
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">MetForm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Elementor</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#portfolio" aria-label="Restaurant Website">Restaurant Website</a>
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/projects/watch-store-full.webp"
+                                                data-lightbox="example-1">
+                                                <img src="assets/images/projects/watchstore-main.webp"
+                                                    alt="Watch Store Website">
+                                            </a>
+
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Woocommerce</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Elementor</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://www.facebook.com/share/r/14PHEXnZiFn/"
+                                                aria-label="Watch Store Website" target="_blank">Watch Store Website</a>
+                                        </h2>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/portfolio4.jpg" data-lightbox="example-1">
+                                                <img src="assets/images/portfolio4.jpg" alt="Portfolio">
+                                            </a>
+
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Css</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">BootStrap</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">Hinterland - Real Estate Site Redesign</a></h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/portfolio5.jpg" data-lightbox="example-1">
+                                                <img src="assets/images/portfolio5.jpg" alt="Portfolio">
+                                            </a>
+
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Framer</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2></h2>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- <section class="testimonial-area page-section scroll-to-page" id="testimonial">
+                    <div class="custom-container">
+                        <div class="testimonial-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-comment"></i> testimonial
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Trusted by <span>Hundered
+                                        Clients</span></h1>
+                            </div>
+
+                            <div class="testimonial-slider-wrap scroll-animation" data-animation="fade_from_bottom">
+                                <div class="owl-carousel testimonial-slider owl-theme">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="assets/images/testimonial-1.jpg" alt="Testimonial">
+                                                <div class="right">
+                                                    <h3>Paublo Dybala</h3>
+                                                    <p class="designation">CEO of <span>IBM Global</span></p>
+                                                </div>
+                                            </div>
+                                            <p>“Shakoor - A Developer with the creativity, professional and
+                                                master of code. Much more than what i'm expect.
+                                                High quality product & flexiable price. Recommended!.”</p>
+
+                                            <a href="#" class="project-btn">Project</a>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="assets/images/testimonial-2.jpg" alt="Testimonial">
+                                                <div class="right">
+                                                    <h3>Christina Morillo</h3>
+                                                    <p class="designation">Product Management of <span>Invision App
+                                                            Inc</span></p>
+                                                </div>
+                                            </div>
+                                            <p>“Shakoor was a real pleasure to work with and we look
+                                                forward to working with him again. He's definitely the kind of
+                                                designer that you can trust with any project from A-Z.”</p>
+
+                                            <a href="#" class="project-btn">Project</a>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="assets/images/testimonial-3.jpg" alt="Testimonial">
+                                                <div class="right">
+                                                    <h3>Phil Foden</h3>
+                                                    <p class="designation">Director of <span>Envato LLC</span></p>
+                                                </div>
+                                            </div>
+                                            <p>“Extremely profressional and fast service!. Shakoor is a master
+                                                of code and he also very creative. We done 1 projects with
+                                                him and certain will continue.”</p>
+
+                                            <a href="#" class="project-btn">Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-footer-nav">
+                                    <div class="testimonial-nav d-flex align-items-center">
+                                        <button class="prev"><svg style="width: 20px;height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg></button>
+                                        <div id="testimonial-slide-count"></div>
+                                        <button class="next"><svg style="width: 20px;height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clients-logos">
+                                <h4 class="scroll-animation" data-animation="fade_from_bottom">work with 60+ brands
+                                    worldwide</h4>
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                        <img src="assets/images/client-1.png" alt="Client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                        <img src="assets/images/client-2.png" alt="Client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                        <img src="assets/images/client-3.png" alt="Client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                        <img src="assets/images/client-4.png" alt="Client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                        <img src="assets/images/client-5.png" alt="Client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                        <img src="assets/images/client-6.png" alt="Client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                        <img src="assets/images/client-7.png" alt="Client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                        <img src="assets/images/client-8.png" alt="Client">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section> -->
+
+
+
+
+                <section class="contact-area page-section scroll-content" id="contact">
+                    <div class="custom-container">
+                        <div class="contact-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-dollar-sign"></i> contact
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Let's Work
+                                    <span>Together!</span>
+                                </h1>
+                            </div>
+
+                            <p id="required-msg">* Marked fields are required to fill.</p>
+
+                            <form id="contact-form" class="contact-form scroll-animation"
+                                data-animation="fade_from_bottom">
+                                <input type="hidden" name="access_key" value="0a109d57-cbef-48a2-a72e-1155a92a783c">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <label for="full-name">full Name <sup>*</sup></label>
+                                            <input type="text" required name="full_name" id="full-name"
+                                                placeholder="etc. Abdul Shakoor">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <label for="email">Email <sup>*</sup></label>
+                                            <input type="email" required name="email" id="email"
+                                                placeholder="etc. example@gmail.com">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <label for="message">message<sup>*</sup></label>
+                                            <textarea name="message" required id="message"
+                                                placeholder="etc. I want to create a website..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+
+                                        <div class="col-md-12">
+                                            <div class="input-group submit-btn-wrap">
+                                                <button type="submit" class="theme-btn" name="submit"
+                                                    id="submit-form">send
+                                                    message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/owl.carousel.js"></script> -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- <script src="assets/js/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script> -->
+
+    <script src="assets/js/app.js" defer></script>
+
+    <!-- <script src="assets/js/main.js"></script> -->
+    <!-- <script src="assets/js/color.js"></script> -->
+
+    <!-- contact form success message -->
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+            const submitBtn = form.querySelector("button[type='submit']");
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Sending...";
+
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData,
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert("✅ Message sent successfully!\nI’ll get back to you soon.");
+                    form.reset();
+                } else {
+                    alert("❌ Failed to send message.\nPlease try again later.");
+                }
+            } catch (error) {
+                alert("⚠️ Network error.\nPlease check your internet connection.");
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Send Message";
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
